@@ -100,4 +100,6 @@ class EprocMmpAocHPscraper(SeleniumScrappingUtils):
 
 if __name__ == '__main__':
     obj = EprocMmpAocHPscraper()
-    obj.get_tender_results("results_all_records_table.csv")     
+    obj.get_tender_results("results_all_records_table.csv")
+    print("FINISHED SCRAPING.")
+
