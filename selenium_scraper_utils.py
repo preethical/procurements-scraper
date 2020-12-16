@@ -30,9 +30,9 @@ class SeleniumScrappingUtils(object):
         '''Initializes session for scrapping utils
         '''
         self.retry_status_codes = [404,500,502,503,504] 
-        options = Options()
-        options.headless = True
-        self.driver = webdriver.Firefox(options) 
+        headlessOpt = Options()
+        headlessOpt.headless = True
+        self.driver = webdriver.Firefox(options=headlessOpt) 
         self.driver.get(SAMPLE_URL)
 
     def get_page_from_url(self, url):
