@@ -16,6 +16,6 @@ chmod +x geckodriver
 
 ### install geckodriver locally ###
 mv geckodriver ~/bin
-export PATH=$PATH:~/bin
+echo 'export PATH=$PATH:~/bin' >> ~/.bashrc  # adjust for zsh and other shells
 ```
 
