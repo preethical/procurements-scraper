@@ -1,7 +1,7 @@
 # procurements-scraper
 TEMPORARY REPO - Written by Gaurav Godhwani, plus modifications
 
-## Install GeckoDriver
+## 1. Install GeckoDriver
 
 ```
 mkdir ~/downloads # if necessary
@@ -19,3 +19,11 @@ mv geckodriver ~/bin
 echo 'export PATH=$PATH:~/bin' >> ~/.bashrc  # adjust for zsh and other shells
 ```
 
+## 2. Install Python Dependencies
+
+```
+sudo apt install python3-pip  # on linux
+
+pip3 install lxml
+pip3 install selenium
+```
