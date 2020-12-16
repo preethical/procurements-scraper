@@ -27,3 +27,12 @@ sudo apt install python3-pip  # on linux
 pip3 install lxml
 pip3 install selenium
 ```
+
+## 3. Install Firefox
+
+NOTE: Firefox runs headless from `selenium_scraper_utils.py`
+
+```
+sudo apt install firefox  # on linux
+```
+

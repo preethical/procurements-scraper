@@ -14,6 +14,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.options import Options
 import shutil
 from urllib3.util import Retry
 
@@ -29,7 +30,9 @@ class SeleniumScrappingUtils(object):
         '''Initializes session for scrapping utils
         '''
         self.retry_status_codes = [404,500,502,503,504] 
-        self.driver = webdriver.Firefox() 
+        options = Options()
+        options.headless = True
+        self.driver = webdriver.Firefox(options) 
         self.driver.get(SAMPLE_URL)
 
     def get_page_from_url(self, url):
